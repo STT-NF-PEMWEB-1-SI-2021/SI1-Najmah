@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pizza</title>
+</head>
+<body style="background-color: #C2C9DD; margin: 50px; margin-top: 20px">
+<form action="pesanan_pizza.html">
+    <h1 style="color: #0d1c45; text-align: center; 
+    border-bottom-style: double; padding: 10px;"><b>Black Goose Pizza<sup>&#174;</sup> | 
+    Pizza-on-Demand </b></h1>
+    <p style="font-size: 18px;">Our  12" wood-fired pizza are available for delivery.
+    Build your custom pizza and we'll deliver it within an hour.</p>
+    
+    <fieldset style="background-color: #a5afd4;">
+        <legend style="border: ridge;"><b>YOUR INFORMATION</b></legend>
+        <table>
+             <tr>
+                <td>Name</td>
+                <td>:</td>
+                <td><input type="text" name="name" style="width: 250px;"/></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>:</td>
+                <td><input type="text" name="address" style="width: 250px;"/></td>
+            </tr>                
+            <tr>
+                <td>Telephone Number</td>
+                <td>:</td>
+                <td><input type="text" name="telephone-number" style="width: 250px;"/></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="text" name="email" style="width: 250px;"/></td>
+            </tr>
+            <tr>
+                <td>Delivery Instruction</td>
+                <td>:</td>
+                <td><textarea rows="4" cols="50" maxlength="400">Enter details here...</textarea>
+            </tr>
+        </table>
+    </fieldset>
+
+    <h2 style="color: #0d1c45; font-size: 20px;">Design Your Dream Pizza</h2>
+    <fieldset style="background-color: #a5afd4;">
+        <legend style="border: ridge;"><b>PIZZA SPECS</b></legend>
+
+        <p><b>Crust (Choose one):</b></p>  
+        <input type="radio" name="crust"><label >Classic white</label><br> 
+        <input type="radio" name="crust"><label >Multigrain</label><br> 
+        <input type="radio" name="crust"><label >Cheese-stuffed crust</label><br>
+        <input type="radio" name="crust"><label >Gluten-free</label><br>
+
+        <hr>
+
+        <p><b>Toppings (Choose as many as you want):</b></p>
+        <input type="checkbox" id="toppings1" name="toppings[]" checked>
+        <label for="toppings1">Red sauce</label> <br>
+        <input type="checkbox" id="toppings2" name="toppings[]">
+        <label for="toppings2">White sauce</label> <br>
+        <input type="checkbox" id="toppings3" name="toppings[]">
+        <label for="toppings3">Mozarella cheese</label><br>
+        <input type="checkbox" id="toppings4" name="toppings[]">
+        <label for="toppings4">Pepperoni</label><br>
+        <input type="checkbox" id="toppings5" name="toppings[]">
+        <label for="toppings5">Mushroom</label><br>
+        <input type="checkbox" id="toppings6" name="toppings[]">
+        <label for="toppings6">Peppers</label><br>
+        <input type="checkbox" id="toppings7" name="topping[]">
+        <label for="toppings7">Achovies</label><br>
+
+        <hr>
+
+        <p><b>How many pizzas you want to order:</b>
+            <select name="quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select></p>
+    </fieldset>
+    <br>
+  <input type="submit" value="Bring Me Pizza" style="padding: 8px">
+  <input type="reset" value="Reset" style="padding: 8px">
+</form>
+</body>
+</html>
