@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+            padding: 0px;
+            text-align: center;
+            background-color:peachpuff;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: space-around;
+        }
+        header, footer{
+            background-color: lightsalmon;
+            height: 15vh;
+        }
+        .middle{
+            display: flex;
+            height: 70vh;
+        }
+        aside{
+            background-color: lightsteelblue;
+            flex-basis: 25%;
+        }
+        article {
+            background-color: lightgreen;
+            flex-basis: 75%;
+        }
+        .image {
+            display: flex;
+            justify-content: center;
+            margin-top: 43vh;
+            margin-left: 5%;
+            margin-right: 5%;
+            height: 30%;
+            position: relative;
+        }
+        .box {
+            margin: 6px;
+        }
+        .imgbox{
+            margin: 5px;
+            background-color: lightslategray;
+            flex-basis: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header class="box">Header</header>
+        <div class="middle">
+            <aside class="box">Aside</aside>
+            <article class="box"> Article
+                <div class="image">
+                    <div class="imgbox">1</div>
+                    <div class="imgbox">2</div>
+                    <div class="imgbox">3</div>
+                </div>
+            </article>
+        </div>
+        <footer class="box">Footer</footer>
+
+    </div>
+</body>
+</html>

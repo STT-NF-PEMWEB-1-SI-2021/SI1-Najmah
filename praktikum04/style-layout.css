@@ -1,0 +1,67 @@
+body {
+    background-color: #E9E1DA; 
+    margin: 3%;
+    color: #0C4876;
+}
+
+header {
+    display: flex;
+    padding: 2%;
+    border: 3px dashed whitesmoke;
+    border-radius: 10px;
+    
+}
+
+#profile-photo {
+    
+    text-align: left;
+    height: 160px;
+    width: 13%;
+}
+
+#bio {
+    width: 70%;
+}
+
+#categories {
+    width: 20%;
+    text-align: right;
+}
+
+.paragraph {
+    text-align: justify;
+    padding: 2%;
+}
+
+.article-bottom {
+    display: flex;
+    width: 100%;
+}
+
+#vids {
+    text-align: center;
+    width: 30%;
+}
+
+video {
+    width: 85%;
+}
+
+#pics, table {
+    text-align: center;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#attachment {
+    text-align: center;
+    width: 30%;
+}
+
+#vids, #pics, #attachment {
+    border: 0.5px solid #608FB7;
+    margin: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
