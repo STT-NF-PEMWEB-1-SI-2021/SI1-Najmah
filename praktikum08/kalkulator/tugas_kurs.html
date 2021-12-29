@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Mata Uang</title>
+    <style>
+        table {
+            width: 66%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        tr, td,table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        input:hover, select:hover {
+            background-color: yellow;
+        }
+        input {
+            width: 98.5%;
+            border: white;
+        }
+        select {
+            width: 100%;
+            border: white;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function hitungKurs() {
+            let x = document.getElementById("nilai_awal").value;
+            console.log ("User memasukkan nilai " + x);
+            let y = document.getElementById("nama_uang").value;
+            console.log ("User memilih kurs " + y);
+            let z = "";
+            if (y == "sgd") {
+                z = x * 13472;
+            } else if (y == "myr") {
+                z = x * 874;
+            } else if (y == "jpy") {
+                z = x * 120;
+            } else if (y == "eur") {
+                z = x * 15888
+            } else if (y == "sar") {
+                z = x * 3592;
+            } else {
+                z = x * 9915;
+            }
+            console.log("Hasil akhir adalah " + z + "rupiah")
+            let hasil = document.getElementById("hasil_akhir");
+            hasil.innerHTML = "Rp." + z
+        }
+    </script>
+</head>
+<body>
+    <h3>Kalkulator Kurs Rupiah</h3>
+    <fieldset>
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <table>
+            <thead>
+                <tr>
+                    <td>Masukkan Nilai</td>
+                    <td>Valas</td>
+                    <td>Nilai Rupiah</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input id="nilai_awal" type="number" min="0" placeholder="Masukkan nilai"></td>
+                    <td>
+                        <select id="nama_uang" onchange="hitungKurs()">
+                        <option value="not">Not Selected</option>
+                        <option value="usd">Dollar US</option>
+                        <option value="sgd">Dollar Singapore</option>
+                        <option value="myr">Ringgit Malaysia</option>
+                        <option value="jpy">Yen Jepang</option>
+                        <option value="eur">Euro</option>
+                        <option value="sar">Riyal Arab Saudi</option>
+                        </select>
+                    </td>
+                    </td>
+                    <td><span id="hasil_akhir"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: beige;
+        }
+        
+        .container {
+            width: 100%;
+        }
+
+        iframe {
+        position: -webkit-sticky;
+        position: sticky;
+        background-color: lightgrey;
+        padding: 5px;
+        font-size: 25px;
+        height: 60vmin;
+        width: 40%;
+        margin: 35vmin 0% 0% 60%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+      
+    </style>
+</head>
+<body>
+    <h2>Aplikasi Chat Sederhana</h2>
+    <div class="container">
+        <iframe class="responsive-iframe" src="chat_window.html"></iframe>
+      </div>
+</body>
+</html>
