@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 70vh;
+        }
+    </style>
+    
+</head>
+<body>
+    <h2>Selamat datang!</h2>
+    <div class="input_box">
+        <fieldset>
+            <label>Pilih hewan:</label>
+            <select id="selection" onChange="showImage()">
+            <option value="not">Not selected</option>
+            <option value="cat">Kucing</option>
+            <option value="dog">Anjing</option>
+            <option value="hamster">Hamster</option>
+            <option value="rabbit">Kelinci</option>
+            <option value="panda">Panda</option>
+            <option value="owl">Burung Hantu</option>
+            </select>
+        </fieldset>
+    </div>
+    <div class="output_box">
+        <img id="output" src="https://bit.ly/3FI99G8" 
+        alt="image">
+    </div>
+    <script>
+        function showImage() {
+            let pilihan = document.getElementById("selection").value;
+            var gambar = document.getElementById("output").src
+            console.log ("User memilih " + pilihan);
+            if (pilihan == "cat") {
+                document.getElementById("output").src = "img/pexels-ihsan-adityawarman-1056251.jpg";
+                window.alert("Anda memilih kucing. Berikut gambar kucing...");
+            } else if (pilihan == "dog") {
+                window.alert("Anda memilih anjing. Berikut gambar anjing...");
+                document.getElementById("output").src = "img/pexels-tanya-gorelova-3860306.jpg"
+            } else if (pilihan == "hamster") {
+                window.alert("Anda memilih hamster. Berikut gambar hamster...");
+                document.getElementById("output").src = "img/pexels-sharon-snider-4520484.jpg"
+            } else if (pilihan == "rabbit") {
+                window.alert("Anda memilih kelinci. Berikut gambar kelinci...");
+                document.getElementById("output").src = "img/pexels-pixabay-33152.jpg"
+            } else if (pilihan == "panda") {
+                window.alert("Anda memilih panda. Berikut gambar panda...");
+                document.getElementById("output").src = "img/pexels-mq-huang-7619839.jpg"
+            } else {
+                window.alert("Anda memilih burung hantu. Berikut gambar burung hantu...");
+                document.getElementById("output").src ="img/pexels-norbert-norbi-4761645.jpg"
+            }
+        }
+    </script>
+</body>
+</html>
